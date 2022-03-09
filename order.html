@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Mr Cake</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /*Fuentes*/
+        @font-face{
+        font-family: "altona-sans";
+        src: url("./fonts/AltonaSans-Regular.ttf");
+        font-weight: normal;
+        font-type: normal;
+        }
+        @font-face{
+        font-family: "make-cake";
+        src: url("./fonts/make\ cake\ ttf.ttf");
+        font-weight: normal;
+        font-type: normal;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(107, 69, 69);
+            padding: 15px;
+            font-family: make-cake;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 15%;
+            height: 1000px;
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 85%;
+            height: 1000px;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #f55171;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src = "./images/logo.png" alt = "Cerrar sesión" width="150px" height="150px">
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./menu.html">Menú</a></li>
+                <li><a href="#">Pedidos</a></li>
+                <li><a href="./dashboard.html">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Ordena tu pastel</h1>
+            <form action="/accion.js" id="form1" method="post">
+                <h2>Sabores</h2>
+                <input type="checkbox" id="flavor1" name="flavor1" value="fresa">
+                <label for="flavor1">Fresa - $350</label><br>
+                <input type="checkbox" id="flavor2" name="flavor2" value="mango">
+                <label for="flavor2">Mango - $399</label><br>
+                <input type="checkbox" id="flavor3" name="flavor3" value="chocolate">
+                <label for="flavor3">Chocolate - $249</label><br>
+                <input type="checkbox" id="flavor4" name="flavor4" value="rolloFresa">
+                <label for="flavor4">Rollo de fresas con crema - $249</label><br>
+                <input type="checkbox" id="flavor5" name="flavor5" value="aleman">
+                <label for="flavor5">Alemán - $349</label><br><br>
+
+                <h2>Tipo de pastel</h2>
+                <input type="radio" id="bodas" name="decoration1" value="bodas">
+                <label for="bodas">Pastel de bodas</label><br>
+                <input type="radio" id="cumpleanos" name="decoration1" value="cumpleanos">
+                <label for="cumpleanos">Pastel de cumpleaños</label><br>
+                <input type="radio" id="revelacion" name="decoration1" value="revelacion">
+                <label for="revelacion">Pastel para revelacion de sexo</label><br><br>
+
+                <h2>Decoración</h2>
+                <input type="checkbox" id="decoration2" name="decoration2" value="chispasChocolate">
+                <label for="decoration1">Chispas de chocolate</label><br>
+                <input type="checkbox" id="decoration3" name="decoration3" value="chispasColores">
+                <label for="decoration2">Chispas de colores</label><br>
+                <input type="checkbox" id="decoration4" name="decoration4" value="nombreDulce">
+                <label for="decoration4">Nombre de dulce</label><br><br>
+                <input type="color" id="decoration5" name="decoration5">
+                <label for="decoration5">Color del betún</label><br><br>
+                <hr>
+                <h2>Datos de envío</h2>
+                <p>introduce tus datos para poder enviar tu pedido</p>
+                <label for="name">Tu nombre</label><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="address">Dirección de envío</label><br>
+                <input type="text" id="address" name="address"><br><br>
+                
+                <label for="tel">Teléfono (10 digitos)</label><br>
+                <input type="tel" id="tel" name="tel" maxlength="10"><br><br>
+
+                <label for="deliveryDate">Fecha de entrega</label><br>
+                <input type="date" id="deliveryDate" name="deliveryDate"><br><br>
+
+                <input type="submit" value="Enviar" id="sendOrder" name="sendOrder" onclick="alert('pedido enviado');">
+                <input type="reset" value="Limpiar">
+            </form>    
+        </article>
+    </section>
+
+    <footer>
+        <h3><strong> Plaza dulzura local #2</strong><br>
+        </h3>
+        <h2>Tel +52 123 xxx xxxx | Lunes a Sabados de 10am a 21:00 hrs</h2>
+    </footer>
+
+</body>
+
+</html>

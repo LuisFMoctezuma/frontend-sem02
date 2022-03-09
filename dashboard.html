@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Mr Cake</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /*Fuentes*/
+        @font-face{
+        font-family: "altona-sans";
+        src: url("./fonts/AltonaSans-Regular.ttf");
+        font-weight: normal;
+        font-type: normal;
+        }
+        @font-face{
+        font-family: "make-cake";
+        src: url("./fonts/make\ cake\ ttf.ttf");
+        font-weight: normal;
+        font-type: normal;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(107, 69, 69);
+            padding: 15px;
+            font-family: make-cake;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 15%;
+            height: 700px;
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 85%;
+            background-color: #f1f1f1;
+            height: 700px;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #f55171;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src = "./images/logo.png" alt = "Cerrar sesión" width="150px" height="150px">
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#"><img src = "./images/graph.png" alt = "Cerrar sesión" width="30px" height="30px"></a></li>
+                <li><a href="./index.html"><img src = "./images/logout.png" alt = "Cerrar sesión" width="30px" height="30px"></a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Sistema de administración Pastelera | Bienvenido</h1>
+            <h2>Pedidos</h2>
+            <table border = "1">
+                <caption>Pedidos</caption>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Decoración</th>
+                    <th>Sabor</th>
+                    <th>Teléfono</th>
+                    <th>Dirección</th>
+                    <th>Detalles</th>
+                </tr>
+                <tr>
+                    <td>Enrique Rendón</td>
+                    <td>Pastel de bodas</td>
+                    <td>tres leches</td>
+                    <td>222123XXXX</td>
+                    <td>Av. Miguel Benito #15 Col. Los encinos</td>
+                    <td><a href="#">Ver más...</a></td>
+                </tr>
+                <tr>
+                    <td>Raul Quintanilla</td>
+                    <td>Pastel de cumpleaños</td>
+                    <td>rollo de fresa</td>
+                    <td>222456XXXX</td>
+                    <td>Río colorado #20 Col. Manantiales</td>
+                    <td><a href="#">Ver más...</a></td>
+                </tr>
+                <tr>
+                    <td>Juan Muñoz</td>
+                    <td>Pastel sorpresa</td>
+                    <td>Chocolate</td>
+                    <td>555123XXXX</td>
+                    <td>Miguel #255 Col. San Ángel</td>
+                    <td><a href="#">Ver más...</a></td>
+                </tr>
+                <tr>
+                    <td>Bastian Lenz</td>
+                    <td>Pastel de cumpleaños</td>
+                    <td>vainilla</td>
+                    <td>333123XXXX</td>
+                    <td>C. Jacarandas #24 Col. Los Olivos</td>
+                    <td><a href="#">Ver más...</a></td>
+                </tr>
+              </table>
+            <h2>Inventario</h2>
+            <table border = "1">
+                <caption>Materiales</caption>
+                <tr>
+                    <th>Material</th>
+                    <th>Cantidad restante</th>
+                    <th>Detalles</th>
+                </tr>
+                <tr>
+                    <td>Harina</td>
+                    <td>50Kg</td>
+                    <td><a href="#">Ver más...</a></td>
+                </tr>
+                <tr>
+                    <td>Chocolate</td>
+                    <td>70Kg</td>
+                    <td><a href="#">Ver más...</a></td>
+                </tr>
+                <tr>
+                    <td>Crema</td>
+                    <td>20Lt</td>
+                    <td><a href="#">Ver más...</a></td>
+                </tr>
+                <tr>
+                    <td>Azúcar</td>
+                    <td>30Kg</td>
+                    <td><a href="#">Ver más...</a></td>
+                </tr>
+              </table>
+              <br><br>
+              <table border = "1">
+                <caption>Sabores en tienda</caption>
+                <tr>
+                    <th>Sabor</th>
+                    <th>Cantidad restante</th>
+                    <th>Detalles</th>
+                </tr>
+                <tr>
+                    <td>Mango</td>
+                    <td>2 Pz</td>
+                    <td><a href="#">Ver más...</a></td>
+                </tr>
+                <tr>
+                    <td>Chocolate</td>
+                    <td>3 Pz</td>
+                    <td><a href="#">Ver más...</a></td>
+                </tr>
+                <tr>
+                    <td>Alemán</td>
+                    <td>AGOTADO</td>
+                    <td><a href="#">Ver más...</a></td>
+                </tr>
+                <tr>
+                    <td>3 Leches</td>
+                    <td>1 Pz</td>
+                    <td><a href="#">Ver más...</a></td>
+                </tr>
+              </table>    
+        </article>
+    </section>
+
+    <footer>
+        <h3><strong> Plaza dulzura local #2</strong><br>
+        </h3>
+        <h2>Tel +52 123 xxx xxxx | Lunes a Sabados de 10am a 21:00 hrs</h2>
+    </footer>
+
+</body>
+
+</html>

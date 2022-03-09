@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Mr Cake</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /*Fuentes*/
+        @font-face{
+        font-family: "make-cake";
+        src: url("./fonts/make\ cake\ ttf.ttf");
+        font-weight: normal;
+        font-type: normal;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: rgb(107, 69, 69);
+            padding: 15px;
+            font-family: make-cake;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 15%;
+            height: 400px;
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 85%;
+            background: url(./images/cover.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 400px;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Estilo de footer */
+        footer {
+            background-color: #f55171;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src = "./images/logo.png" alt = "Cerrar sesión" width="150px" height="150px">
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./menu.html">Menú</a></li>
+                <li><a href="./order.html">Pedidos</a></li>
+                <li><a href="./dashboard.html">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>Los mejores pasteles en la ciudad</h1>
+            <a href="./order.html">Elige tu sabor favorito aqui</a>
+        </article>
+    </section>
+
+    <footer>
+        <h3> <strong> Plaza dulzura local #2</strong><br>
+        </h3>
+        <h2>Tel +52 123 xxx xxxx | Lunes a Sabados de 10am a 21:00 hrs</h2>
+    </footer>
+
+</body>
+
+</html>
